@@ -1,0 +1,74 @@
+// Fonts.
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Roboto:ital,wght@0,400;0,700;1,400&family=Varela+Round&display=swap');
+
+$KumbhSans: 'Kumbh Sans', sans-serif;
+$Roboto: 'Roboto', sans-serif;
+$VarelaRound: 'Varela Round', sans-serif;
+
+$headingFont: $KumbhSans;
+$subheadingFont: $VarelaRound;
+$textFont: $Roboto;
+
+
+// Colors.
+$deepBlue: #0D213F;
+$blue : #7D7AA6;
+$pinkBeige : #EDD2CD;
+$pinkBlush : #F4EBEA;
+$prune : #7E617C;
+$coral : #DB8783;
+
+$textColor: $deepBlue;
+$white: #FFF;
+
+// Breakpoints.
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+  @media (min-width: $screen+'px' ) {
+    @content;
+  }
+}
+
+// Margin.
+$biggestDefaultMargin: 10rem;
+$smallerDefaultMargin: 3rem;

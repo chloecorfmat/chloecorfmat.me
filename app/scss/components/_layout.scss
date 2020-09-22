@@ -1,0 +1,56 @@
+body {
+  border-top: 4px solid $coral;
+  border-bottom: 4px solid $coral;
+}
+
+.block {
+  margin: 2rem 3rem;
+
+  &--colored {
+    background: $coral;
+    padding: 1.5rem;
+    border-radius: 3px;
+    display: block;
+    text-align: center;
+  }
+
+  @include sm {
+    margin: 3rem 5rem;
+  }
+
+  @include md {
+    &--colored {
+      margin: 3rem 10rem;
+    }
+  }
+
+  @include lg {
+    margin: $smallerDefaultMargin $biggestDefaultMargin;
+
+    &--colored {
+      margin: 5rem 15rem;
+    }
+
+    &:last-child {
+      margin-bottom: 3rem;
+    }
+  }
+
+  @include xl {
+    &--colored {
+      margin: 5rem 18rem;
+    }
+  }
+}
+
+.subblock {
+  margin-top: 2rem;
+
+  @include sm {
+    margin-top: 3rem;
+  }
+
+  @include lg {
+    margin-top: initial;
+  }
+}

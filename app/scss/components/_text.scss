@@ -1,0 +1,43 @@
+li,
+p {
+  color: $deepBlue;
+  font-family: $VarelaRound;
+}
+
+a {
+  color: $prune;
+  font-family: $VarelaRound;
+
+  &:hover {
+    color: $blue;
+    font-weight: 700;
+  }
+}
+
+.important {
+  font-weight: 700;
+}
+
+.subheading {
+  color: $coral;
+  font-family: $VarelaRound;
+  font-size: 1rem;
+  text-transform: initial;
+}
+
+.block {
+  &--colored {
+    li,
+    p {
+      color: $pinkBlush;
+    }
+
+    a {
+      color: $pinkBlush;
+
+      &:hover {
+        color: $pinkBeige;
+      }
+    }
+  }
+}

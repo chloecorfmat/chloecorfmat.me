@@ -1,0 +1,10 @@
+.organizations {
+  &--list {
+    list-style-type: none;
+    list-style-image: none;
+
+    &-item {
+      margin-top: 1rem;
+    }
+  }
+}

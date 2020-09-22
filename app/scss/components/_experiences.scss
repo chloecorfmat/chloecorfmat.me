@@ -1,0 +1,37 @@
+.experiences {
+  &--list {
+    &-item {
+      margin-top: 2rem;
+
+      &--details {
+        margin-top: 1rem;
+      }
+
+      &--image {
+        max-width: 225px;
+      }
+
+      &--info {
+        font-size: .9rem;
+      }
+
+      &--description {
+        margin-top: 1rem;
+      }
+
+      @include lg {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        column-gap: 3rem;
+
+        &--details {
+          margin-top: 0;
+        }
+
+        &--image {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

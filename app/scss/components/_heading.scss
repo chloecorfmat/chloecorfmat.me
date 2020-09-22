@@ -1,0 +1,27 @@
+h1,
+.h1-like {
+  color: $deepBlue;
+  font-family: $headingFont;
+  font-size: 3rem;
+}
+
+
+h2,
+.h2-like {
+  color: $pinkBeige;
+  font-family: $headingFont;
+  text-transform: uppercase;
+}
+
+h3,
+.h3-like {
+  color: $coral;
+  font-size: 1.1rem;
+  font-family: $headingFont;
+  text-transform: uppercase;
+
+  .subheading {
+    color: $prune;
+    font-size: .8rem;
+  }
+}

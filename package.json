@@ -1,0 +1,17 @@
+{
+  "name": "chloecorfmat.me",
+  "version": "1.0.0",
+  "description": "Chloe's CV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chloé Corfmat <hello@chloecorfmat.me>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}

@@ -1,0 +1,21 @@
+@import "reset";
+@import "tools";
+
+@import "components/button";
+@import "components/content";
+@import "components/footer";
+@import "components/header";
+@import "components/heading";
+@import "components/layout";
+@import "components/list";
+@import "components/text";
+
+@import "components/experiences";
+@import "components/freetime";
+@import "components/hobbies";
+@import "components/languages";
+@import "components/organizations";
+
+img {
+  max-width: 100%;
+}

@@ -1,0 +1,33 @@
+.header {
+  margin: 2rem 3rem;
+  text-align: center;
+
+  h1 {
+    margin-top: 1rem;
+  }
+
+  &--image {
+    display: inline;
+    max-width: 200px;
+  }
+
+  @include sm {
+    margin: 3rem 5rem;
+  }
+
+  @include lg {
+    margin: $smallerDefaultMargin $biggestDefaultMargin;
+  }
+
+  @include xl {
+    align-items: center;
+    column-gap: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    text-align: left;
+
+    h1 {
+      margin-top: 0;
+    }
+  }
+}
